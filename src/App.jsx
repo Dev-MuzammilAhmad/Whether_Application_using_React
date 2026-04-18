@@ -60,6 +60,11 @@ function App() {
   return (
     <>
       <div className="page-background">
+
+        <div className="title-container">
+  <h1 className="app-title">SkyCast</h1>
+  <p className="app-slogan">Your daily weather, at a glance.</p>
+</div>
         <div className="container">
           {weatherData && (
             <>
