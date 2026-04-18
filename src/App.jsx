@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 const weatherImages = {
-  Clear: "/sunny.png",
-  Clouds: "/cloudy.png",
-  Rain: "/rainy.png",
-  Snow: "/snowy.png",
-  Thunderstorm: "/thunderstorm.png",
-  Drizzle: "/drizzle.png",
-  Mist: "/mist.png",
-  Smoke: "/smoke.png",
+  Clear: `${import.meta.env.BASE_URL}sunny.png`,
+  Clouds: `${import.meta.env.BASE_URL}cloudy.png`,
+  Rain: `${import.meta.env.BASE_URL}rainy.png`,
+  Snow: `${import.meta.env.BASE_URL}snowy.png`,
+  Thunderstorm: `${import.meta.env.BASE_URL}thunderstorm.png`,
+  Drizzle: `${import.meta.env.BASE_URL}drizzle.png`,
+  Mist: `${import.meta.env.BASE_URL}mist.png`,
+  Smoke: `${import.meta.env.BASE_URL}smoke.png`,
 };
 
-const defaultImage = "/weather-default.png";
+const defaultImage = `${import.meta.env.BASE_URL}weather-default.png`;
 
 function App() {
   const [cityName, setCityName] = useState("Peshawar");
